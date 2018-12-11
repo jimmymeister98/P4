@@ -86,7 +86,7 @@ struct packet_t * packet_create(char *name) {
     packet->queue = NULL;
  //todo   printf("(Paketadresse : %x)\n",packet);
     //struct packet_t* pointer = &packet;
-    printf("%dtes. paket\n",a);
+   // printf("%dtes. paket\n",a);
     a++;
     return packet;
 }
@@ -99,7 +99,7 @@ int packet_destroy(struct packet_t* packet) {
    // free(packet->queue); //TODO Packet aus der queue lösen ohne namen zu löschen
     //packet->queue=NULL;
   //  free(packet->name);
-  printf("%d Adresse %x\n",i,packet);
+ // printf("%d Adresse %x\n",i,packet);
    free(packet);
    i++;//free packet
     return 1;
